@@ -20,7 +20,7 @@ The **EHEIM Digital** {% term integration %} allows you to control your [EHEIM D
 
 {% configuration_basic %}
 Host:
-    description: "The IP address or hostname of your EHEIM Digital main device. Defaults to `eheimdigital.local`, an IP address should only be neccessary if the hostname doesn't work."
+    description: "The IP address or hostname of your EHEIM Digital main device. Defaults to `eheimdigital.local`, an IP address should only be necessary if the hostname doesn't work."
     required: true
     type: string
 {% endconfiguration_basic %}
