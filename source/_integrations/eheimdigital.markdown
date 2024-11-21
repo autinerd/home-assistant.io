@@ -30,3 +30,9 @@ Currently, the following devices and entities are supported:
 - **Daycycle mode effect**: Automatically controls the brightness based on the daytime as configured on the device
 
 Support for additional EHEIM Digital devices and entities will be added in future updates.
+
+## Remove integration
+
+This integration follows standard integration removal, no extra steps are required.
+
+{% include common-tasks/remove_device_service.md %}
