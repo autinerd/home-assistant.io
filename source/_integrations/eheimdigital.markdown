@@ -3,7 +3,7 @@ title: EHEIM Digital
 description: Instructions on how to set up EHEIM Digital with Home Assistant.
 ha_category:
   - Light
-ha_release: 2024.11
+ha_release: 2025.1
 ha_iot_class: Local Polling
 ha_config_flow: true
 ha_codeowners:
