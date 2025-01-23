@@ -65,7 +65,7 @@ The bouquet for the source list can be configured via the Configure button of th
 
 ## Data updates
 
-My integration fetches data from the device every 15 seconds by default.
+This integration fetches data from the device every 15 seconds by default.
 
 ## Troubleshooting
 
