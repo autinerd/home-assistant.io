@@ -47,18 +47,18 @@ The integration provides the following configuration options:
 
 {% configuration_basic %}
 Turn off to deep standby:
-    description: >
-        Shuts the device down (called Deep Standby) on turning off the device.
-
-        {% warning %}
-        When the device is in Deep Standby, it can no longer be reached! Turning on the device is only possible via:
-        - Wake on LAN
-        - Power button on the device
-        - Remote control
-        {% endwarning %}
+    description: "Shuts the device down (called Deep Standby) on turning off the device."
 Bouquet to use as media source:
     description: "Sets the bouquet to use for the source list."
 {% endconfiguration_basic %}
+
+{% warning %}
+When the device is in Deep Standby, it can no longer be reached! Turning on the device is only possible via:
+
+- Wake on LAN
+- Power button on the device
+- Remote control
+{% endwarning %}
 
 ## Entities
 
