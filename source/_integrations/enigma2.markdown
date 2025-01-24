@@ -48,10 +48,16 @@ The integration provides the following configuration options:
 {% configuration_basic %}
 Turn off to deep standby:
     description: "Shuts the device down (called Deep Standby) on turning off the device.
-                Beware that the device can no longer be reached when shut down! Turning on the device is only possible via Wake on LAN, the power button on the device or the remote control!"
+
+                  {% warning %}
+                  When the device is in Deep Standby, it can no longer be reached! Turning on the device is only possible via:
+                  - Wake on LAN
+                  - Power button on the device
+                  - Remote control
+                  {% endwarning %}"
 Bouquet to use as media source:
     description: "Sets the bouquet to use for the source list."
-{% end configuration_basic %}
+{% endconfiguration_basic %}
 
 ## Entities
 
@@ -59,9 +65,14 @@ Currently, the following entity is exposed:
 
 ### Media player
 
-The following actions are supported: Play, Pause, Channel up and down (represented by previous and next track), setting volume, switching the channel via the source list.
+The following actions are supported:
 
-The bouquet for the source list can be configured via the Configure button of the device entry on the [integration page](https://my.home-assistant.io/redirect/integration/?domain=enigma2).
+- Play/Pause
+- Channel up and down (represented by previous and next track)
+- Volume control
+- Channel switching via source list
+
+The bouquet for the source list can be configured via the Configuration options.
 
 ## Data updates
 
@@ -77,7 +88,14 @@ OpenWebif has a protection by default, so that only devices in the same subnet c
 
 #### Resolution
 
-There are two solutions: You can either enable HTTP(S) Authentication or enable the setting "Enable access from VPNs"
+There are two solutions:
+
+1. Enable HTTP(S) Authentication (recommended for security)
+2. Enable the OpenWebif setting "Enable access from VPNs"
+
+{% note %}
+If you choose to enable VPN access without authentication, ensure your network is properly secured as OpenWebif is not designed for publicly facing the internet.
+{% endnote %}
 
 ## Remove integration
 
