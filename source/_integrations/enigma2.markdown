@@ -30,7 +30,7 @@ Please beware that the OpenWebif setting "Require client cert for HTTPS" is not 
 Host:
     description: "The IP address or hostname of your device."
 Port:
-    description: "The port of the OpenWebif service running. Defaults to 80."
+    description: "The port number of the OpenWebif service running. (default: 80)."
 Username:
     description: "The username, if HTTP(S) Authentication is enabled."
 Password:
@@ -47,18 +47,10 @@ The integration provides the following configuration options:
 
 {% configuration_basic %}
 Turn off to deep standby:
-    description: "Shuts the device down (called Deep Standby) on turning off the device."
+    description: "Shuts the device down (called Deep Standby) on turning off the device. **Important**: When the device is in *Deep Standby*, it can no longer be reached! Turning on the device is only possible via one of the following methods: Wake on LAN, Power button on the device, or the Remote control."
 Bouquet to use as media source:
     description: "Sets the bouquet to use for the source list."
 {% endconfiguration_basic %}
-
-{% warning %}
-When the device is in Deep Standby, it can no longer be reached! Turning on the device is only possible via:
-
-- Wake on LAN
-- Power button on the device
-- Remote control
-{% endwarning %}
 
 ## Entities
 
@@ -69,7 +61,7 @@ Currently, the following entity is exposed:
 The following actions are supported:
 
 - Play/Pause
-- Channel up and down (represented by previous and next track)
+- Channel up and down (using the previous/next track buttons in the media player controls)
 - Volume control
 - Channel switching via source list
 
