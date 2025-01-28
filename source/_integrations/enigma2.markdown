@@ -32,9 +32,9 @@ Host:
 Port:
     description: "The port number of the OpenWebif service running. (default: 80)."
 Username:
-    description: "The username, if HTTP(S) Authentication is enabled."
+    description: "The username, if HTTP(S) authentication is enabled."
 Password:
-    description: "The password, if HTTP(S) Authentication is enabled."
+    description: "The password, if HTTP(S) authentication is enabled."
 Uses an SSL certificate:
     description: "Whether HTTPS is enabled."
 Verify SSL certificate:
@@ -81,10 +81,10 @@ OpenWebif has a protection by default, so that only devices in the same subnet c
 
 #### Resolution
 
-There are two solutions:
+There are two possible solutions to resolve this problem:
 
-1. Enable HTTP(S) Authentication (recommended for security)
-2. Enable the OpenWebif setting "Enable access from VPNs"
+- Enable HTTP(S) authentication (recommended for security)
+- Enable the OpenWebif setting "Enable access from VPNs"
 
 {% note %}
 If you choose to enable VPN access without authentication, ensure your network is properly secured as OpenWebif is not designed for publicly facing the internet.
